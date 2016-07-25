@@ -3,9 +3,10 @@
 <p>The 
    <strong> 
       <em>Report Printer </em></strong>tool is a SharePoint 2013 application that is used to print the current page this is added to. It adds a &quot;Print&quot;, &quot;Add to Favorites&quot;, and &quot;Close&quot; button to the page. The navigation, Ribbon, and Site Title are all hidden from the page until the&#160;user choses to print.</p> 
-<br/><br/>
-
+<br/>
+<hr>
 <img src="https://github.com/MarionMOwen/SharePoint-ReportPrinter/blob/master/screenshot.PNG" alt="Report Printer" />
+<hr>
 <br/><br/>
 <p> 
    <strong>Features</strong></p> 
