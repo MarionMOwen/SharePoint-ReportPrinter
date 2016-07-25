@@ -1,0 +1,107 @@
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"/> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<style type="text/css">
+
+	/* Hide specific parts of SharePoint */
+	#s4-titlerow #DeltaPlaceHolderSearchArea{
+		display:none!important;
+	}
+	
+	/*  */
+	#s4-titlerow{
+		margin-left:20px;
+	}
+	#SiteLogo{
+		float:left;
+	}
+	#s4-ribbonrow,.welcome-content {display:none;}	
+	#contentRow
+	{
+		margin-left:20px;
+		margin-right:20px;
+		padding-top:0px;
+	}
+	#pageTitle{
+		margin-left:15px!important;
+			}	
+	#sideNavBox, .ms-breadcrumb-top, .ms-core-navigation { DISPLAY: none }
+  	#contentBox { margin-left: 10px }
+  	.ms-core-pageTitle	{margin-top:10px;}
+  	
+  	
+  	/* Specific styling for the buttons */
+  	.printBtns{
+		margin-top:30px;
+	}
+	
+	/* 'As of...' date field style */	
+  	#printDate{
+		margin-bottom:-60px;
+		display:none;
+	}
+	
+/* Manages the the CSS for printing */	
+@media print {
+  
+  a[href]:after {
+    content: none;
+  }   
+  
+  #suiteBar, .ms-webpart-chrome-title {
+	display:none;
+  }
+
+  #contentRow{
+	padding-top:20px;
+  }
+  
+  #printDate,.welcome-content
+  {
+	display:inline;
+  }
+}
+</style>
+
+<div class="printBtns hidden-print">
+	<a class="btn btn-primary" id="printReport">
+	  <i class="fa fa-print fa-lg"></i> Print
+	</a>
+	<a class="btn btn-default" id="addFave">
+	  <i class="fa fa-star fa-lg"></i> Add to Favorites
+	</a>
+	<a class="btn btn-danger pull-right" id="closeReport">
+	  <i class="fa fa-times fa-lg"></i> Close
+	</a>
+
+</div>
+
+<!-- Display todays date at print time. -->
+<h4 id="printDate"></h4>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#printReport").click(function(){
+		window.print();
+	});
+	
+	$("#addFave").click(function(){
+		window.external.AddFavorite(location.href,document.title); 
+	});
+	
+	$("#closeReport").click(function(){
+		window.close();
+	});
+	
+	//Insert print date into the are on the page.
+	var dateToday = new Date();
+	$("#printDate").text("Review Report as of "+ dateToday.toLocaleDateString());
+	
+});
+</script>
