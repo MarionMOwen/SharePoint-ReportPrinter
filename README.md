@@ -1,7 +1,12 @@
+<h1>SharePoint - Report Printer</h1>
+
 <p>The 
    <strong> 
-      <em>CDC Print </em></strong>web part is a SharePoint 2013 application that is used to print the current page the Web Part is added to. It adds a &quot;Print&quot;, &quot;Add to Favorites&quot;, and &quot;Close&quot; button to the page. The navigation, Ribbon, and Site Title are all hidden from the page until the&#160;user choses to print.</p> 
-<p>&#160;</p> 
+      <em>Report Printer </em></strong>tool is a SharePoint 2013 application that is used to print the current page this is added to. It adds a &quot;Print&quot;, &quot;Add to Favorites&quot;, and &quot;Close&quot; button to the page. The navigation, Ribbon, and Site Title are all hidden from the page until the&#160;user choses to print.</p> 
+<br/><br/>
+
+<img src="https://github.com/MarionMOwen/SharePoint-ReportPrinter/blob/master/screenshot.PNG" alt="Report Printer" />
+<br/><br/>
 <p> 
    <strong>Features</strong></p> 
 <ul> 
@@ -30,7 +35,7 @@
    <ul> 
       <li>&quot;Clo<em></em>se&quot; the 
          <strong> 
-            <em>CDC Print </em></strong>web part to disable the custom styling. You can add the web part back by clicking &quot;Add a Web Part&quot; to the page, then scrolling to the &quot;Closed Web Parts&quot; section.</li> 
+            <em>Report Printer </em></strong>web part to disable the custom styling. You can add the web part back by clicking &quot;Add a Web Part&quot; to the page, then scrolling to the &quot;Closed Web Parts&quot; section.</li> 
    </ul> 
    <li>How do I get the background colors to display when i print?</li> 
    <ul> 
