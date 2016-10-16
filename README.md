@@ -38,7 +38,7 @@
    <ul> 
       <li>This is a setting in your &quot;Page Setup&quot; of the browser. Please modify the Footer section.</li> 
    </ul> 
-   <li>The Page Numbers keep displaying on my report. How do i remove it when printing?</li> 
+   <li>The Page Numbers keep displaying on my report. How do I remove it when printing?</li> 
    <ul> 
       <li>This is a setting in your &quot;Page Setup&quot; of the browser. Please modify the Footer section.</li> 
    </ul> 
